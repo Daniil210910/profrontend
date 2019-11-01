@@ -24,7 +24,7 @@ nav a {
   color: #ffffff;
 }
 
-.firstPage {
+section {
   width: 70%;
   margin-left: 20px;
   padding-right: 10px;
@@ -34,23 +34,21 @@ nav a {
   border-right-color: #aedae1;
 }
 
-.firstPage h2 {
+section h2 {
   color: #cea081;
   margin: 20px 0 20px 0;
 }
 
-.firstPage h4 {
+section h4 {
   color: #aedae1;
   margin-bottom: 20px;
 }
 
-.firstPage a {
+section a {
   color: #e8c9af;
 }
 
 img {
-  width: 230px;
-  height: 200px;
   margin: 15px 0 0 20px;
 }
 
@@ -58,17 +56,17 @@ figcaption {
   margin: 0 0 15px 20px;
 }
 
-.list {
+aside {
   width: 28%;
   float: right;
 }
 
-.list h3 {
+aside h3 {
   color: #cea081;
   margin: 20px 0 20px 70px;
 }
 
-.list ul {
+aside ul {
   margin-left: 70px;
 }
 
@@ -76,12 +74,11 @@ table {
   margin-bottom: 30px;
 }
 
-table, td {
+table, td, th {
   border: 1px solid #000000;
   border-collapse: collapse;
-  text-align: center;
 }
 
 thead, tfoot {
-  background-color: #eddaa3;
+  border: 1px solid #000000;
 }
