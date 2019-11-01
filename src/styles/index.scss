@@ -1,6 +1,87 @@
-$body-color:blue;
+$footerHeaderBackground-color: #423440;
 
 body {
-  color: $body-color;
-  font-family: sans-serif;
+  margin: 0;
+}
+
+footer, header {
+  background-color: $footerHeaderBackground-color;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 0 10px 0;
+}
+
+footer {
+  padding: 30px 0 30px 0;
+  clear: both;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #ffffff;
+}
+
+.firstPage {
+  width: 70%;
+  margin-left: 20px;
+  padding-right: 10px;
+  float: left;
+  border-right-style: dotted;
+  border-right-width: 2px;
+  border-right-color: #aedae1;
+}
+
+.firstPage h2 {
+  color: #cea081;
+  margin: 20px 0 20px 0;
+}
+
+.firstPage h4 {
+  color: #aedae1;
+  margin-bottom: 20px;
+}
+
+.firstPage a {
+  color: #e8c9af;
+}
+
+img {
+  width: 230px;
+  height: 200px;
+  margin: 15px 0 0 20px;
+}
+
+figcaption {
+  margin: 0 0 15px 20px;
+}
+
+.list {
+  width: 28%;
+  float: right;
+}
+
+.list h3 {
+  color: #cea081;
+  margin: 20px 0 20px 70px;
+}
+
+.list ul {
+  margin-left: 70px;
+}
+
+table {
+  margin-bottom: 30px;
+}
+
+table, td {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead, tfoot {
+  background-color: #eddaa3;
 }
