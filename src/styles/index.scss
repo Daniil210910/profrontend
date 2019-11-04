@@ -1,7 +1,25 @@
-div, section, p {
-  width: 200px;
-  height: 300px;
-  border: 1px solid #000000;
-  padding: 20px 10px;
-  margin: 5px;
+body {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: #423440;
+  padding: 50px 0 50px 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+p {
+  text-indent: 20px;
 }
