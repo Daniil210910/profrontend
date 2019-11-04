@@ -1,2 +1,6 @@
 import '../styles/index.scss';
-console.log('webpack starterkit');
+
+var a = 15;
+var b = 5;
+
+console.log(a + b, a / b, a * b, a - b);
