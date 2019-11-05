@@ -1,6 +1,18 @@
 import '../styles/index.scss';
 
-var a = 15;
-var b = 5;
+var user = {
+    Name: "Daniil",
+    LastName: "Kravchenko",
+    Age: 22,
+    DOB: "28.05.1997",
+    Height: 180,
+    HasPet: true,
+    FavoriteFood: "pizza, burgers, steak",
+    userInformation: function () {
+        console.log("Name:" + user.Name + " " + "LastName:" + user.LastName + " " + "Age:" + user.Age);
+    }
+};
 
-console.log(a + b, a / b, a * b, a - b);
+console.log(user);
+user.userInformation();
+
