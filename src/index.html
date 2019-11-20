@@ -7,14 +7,14 @@
   <title>webpack starterkit</title>
 </head>
 
-<body>
-  <footer>
+<body onload="pageLoaded()">
+  <header onmouseover="overHeader()" onmouseout="outHeader()">
     <nav>
       <a href="#">Home</a>
       <a href="#">Blog</a>
       <a href="#">Store</a>
     </nav>
-  </footer>
+  </header>
   <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
   <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -51,6 +51,9 @@
     sed. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Interdum velit euismod in pellentesque. Dui
     id ornare arcu odio ut sem.
   </p>
+
+  <input type="text" onchange="inputInfo()" onkeydown="pushKey()">
+  <button onclick="buttonClick()">Click me</button>
 </body>
 
 </html>
