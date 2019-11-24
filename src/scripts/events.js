@@ -1,26 +1,26 @@
-function inputInfo() {
-    console.log("text");
-}
+// function inputInfo() {
+//     console.log("text");
+// }
 
-function buttonClick() {
-    alert("You clicked me");
-}
+// function buttonClick() {
+//     alert("You clicked me");
+// }
 
-function overHeader() {
-    alert("This is header");
-}
+// function overHeader() {
+//     alert("This is header");
+// }
 
-function outHeader() {
-    alert("You left header");
-}
+// function outHeader() {
+//     alert("You left header");
+// }
 
-function pushKey() {
-    alert("You push key");
-}
+// function pushKey() {
+//     alert("You push key");
+// }
 
-function pageLoaded() {
-    alert("Page is loaded");
-}
+// function pageLoaded() {
+//     alert("Page is loaded");
+// }
 
 
 

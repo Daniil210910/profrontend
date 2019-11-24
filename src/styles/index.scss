@@ -23,3 +23,23 @@ h1, h2, h3, h4, h5, h6 {
 p {
   text-indent: 20px;
 }
+
+.ol-styled > li {
+  color: orange;
+}
+
+.ol-styled > ul > li {
+  color: red;
+}
+
+.combinators > div {
+  background-color: orangered;
+}
+
+span + section {
+  background-color: yellow;
+}
+
+span ~ div {
+  background-color: green;
+}

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>webpack starterkit</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body onload="pageLoaded()">
@@ -15,6 +16,7 @@
       <a href="#">Store</a>
     </nav>
   </header>
+  <i class="fas fa-lightbulb"></i>
   <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
   <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -54,6 +56,36 @@
 
   <input type="text" onchange="inputInfo()" onkeydown="pushKey()">
   <button onclick="buttonClick()">Click me</button>
+
+  <section>
+    <ol class="ol-styled">
+      <li>Cat</li>
+      <li>Dog</li>
+      <ul>
+        <li>Bear</li>
+        <li><span>Tiger</span>
+          <section>
+            Ohh tiger!
+          </section>
+        </li>
+        <li><span>Tiger</span>
+          <div>
+            Ohh tiger!
+          </div>
+        </li>
+      </ul>
+    </ol>
+  </section>
+  <section class="combinators">
+    <div class="">
+      Hello world
+    </div>
+    <span>Some text</span>
+    <section class="inner-combinator">
+      <span>More text</span>
+      <div class="">I am also div</div>
+    </section>
+  </section>
 </body>
 
 </html>
