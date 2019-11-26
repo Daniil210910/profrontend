@@ -1,4 +1,5 @@
 import '../styles/index.scss';
+import 'bootstrap';
 import './events.js';
 
 // const user = {

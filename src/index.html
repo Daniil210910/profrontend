@@ -8,84 +8,176 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body onload="pageLoaded()">
-  <header onmouseover="overHeader()" onmouseout="outHeader()">
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Blog</a>
-      <a href="#">Store</a>
-    </nav>
-  </header>
-  <i class="fas fa-lightbulb"></i>
-  <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-  <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Massa enim nec dui nunc. Sit amet
-    consectetur adipiscing elit duis tristique sollicitudin. Eu volutpat odio facilisis mauris. Rhoncus est pellentesque
-    elit ullamcorper dignissim. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. Massa
-    sapien faucibus et molestie. Lectus magna fringilla urna porttitor rhoncus. Scelerisque varius morbi enim nunc
-    faucibus a pellentesque sit. Vehicula ipsum a arcu cursus vitae congue. Malesuada pellentesque elit eget gravida.
-    Convallis aenean et tortor at risus. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris.
-  </p>
-  <p>
-    Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis. Sapien faucibus et molestie ac. Quam
-    viverra orci sagittis eu volutpat odio facilisis mauris sit. Adipiscing at in tellus integer feugiat scelerisque.
-    Faucibus ornare suspendisse sed nisi lacus. Egestas tellus rutrum tellus pellentesque eu. Sit amet nisl purus in
-    mollis nunc sed id. Et malesuada fames ac turpis. Ut tristique et egestas quis ipsum suspendisse ultrices gravida
-    dictum. Id aliquet risus feugiat in ante metus dictum at tempor. Amet commodo nulla facilisi nullam vehicula ipsum.
-    Turpis egestas pretium aenean pharetra. Sem et tortor consequat id porta. Orci phasellus egestas tellus rutrum
-    tellus. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh.
-  </p>
-  <p>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">ProFrontend</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    Ut enim blandit volutpat maecenas volutpat. Est lorem ipsum dolor sit amet. Urna id volutpat lacus laoreet. Ut
-    porttitor leo a diam sollicitudin. Nunc sed blandit libero volutpat sed cras ornare. A diam sollicitudin tempor id.
-    Malesuada pellentesque elit eget gravida cum. Purus viverra accumsan in nisl nisi scelerisque eu ultrices. Vulputate
-    odio ut enim blandit. Magnis dis parturient montes nascetur ridiculus mus. Euismod elementum nisi quis eleifend quam
-    adipiscing vitae proin. Aliquet nec ullamcorper sit amet risus nullam eget felis eget. A scelerisque purus semper
-    eget duis at tellus at urna. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. At augue
-    eget arcu dictum varius duis at consectetur lorem. Metus dictum at tempor commodo ullamcorper a lacus vestibulum
-    sed. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Interdum velit euismod in pellentesque. Dui
-    id ornare arcu odio ut sem.
-  </p>
-
-  <input type="text" onchange="inputInfo()" onkeydown="pushKey()">
-  <button onclick="buttonClick()">Click me</button>
-
-  <section>
-    <ol class="ol-styled">
-      <li>Cat</li>
-      <li>Dog</li>
-      <ul>
-        <li>Bear</li>
-        <li><span>Tiger</span>
-          <section>
-            Ohh tiger!
-          </section>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li><span>Tiger</span>
-          <div>
-            Ohh tiger!
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </li>
       </ul>
-    </ol>
-  </section>
-  <section class="combinators">
-    <div class="">
-      Hello world
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
-    <span>Some text</span>
-    <section class="inner-combinator">
-      <span>More text</span>
-      <div class="">I am also div</div>
-    </section>
+  </nav>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <a class="btn btn-lg btn-warning" href="#" role="button">Learn more</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img class="w-100" src="../src/images/obl-01.jpg" alt="Main image">
+      </div>
+    </div>
   </section>
+  <section class="container for-whom">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="my-3">Кому подойдет курс?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="text-center icon-container">
+              <i class="fas fa-user-friends text-warning"></i>
+            </div>
+            <h4>Junior Developer</h4>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Suscipit adipiscing bibendum est ultricies integer quis auctor. Pellentesque massa
+              placerat duis ultricies lacus sed turpis tincidunt.
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="text-center icon-container">
+              <i class="fas fa-user-cog text-warning"></i>
+            </div>
+            <h4>Mid Developer</h4>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Suscipit adipiscing bibendum est ultricies integer quis auctor. Pellentesque massa
+              placerat duis ultricies lacus sed turpis tincidunt.
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="text-center icon-container">
+              <i class="fas fa-hands-helping text-warning"></i>
+            </div>
+            <h4>Senior Developer</h4>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Suscipit adipiscing bibendum est ultricies integer quis auctor. Pellentesque massa
+              placerat duis ultricies lacus sed turpis tincidunt.
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container about-school">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <h2 class="my-3">О нашей школе</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Suscipit adipiscing bibendum est ultricies integer quis auctor. Pellentesque massa placerat duis
+          ultricies lacus sed turpis tincidunt. Est ullamcorper eget nulla facilisi etiam dignissim diam quis. Convallis
+          convallis tellus id interdum velit laoreet id donec ultrices. Condimentum mattis pellentesque id nibh tortor
+          id aliquet lectus proin. Tempor orci dapibus ultrices in iaculis. Accumsan tortor posuere ac ut consequat.
+          Turpis egestas pretium aenean pharetra magna ac placerat. Lectus proin nibh nisl condimentum. Sagittis vitae
+          et leo duis ut diam quam nulla porttitor.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <div class="row">
+          <div class="col-sm">
+            <img class="small-square-image" src="../src/images/icons/css-3.png" alt="">
+          </div>
+          <div class="col-sm">
+            <img class="small-square-image" src="../src/images/icons/html-5.png" alt="">
+          </div>
+          <div class="col-sm">
+            <img class="small-square-image" src="../src/images/icons/javascript.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid map text-center">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6 offset-3 vertical-center">
+        <div class="register-form">
+          <h3 class="mb-2">Register now!</h3>
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+            <div class="form-row">
+              <button type="button" class="btn btn-warning mt-2 btn-lg btn-block">Register for curse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main role="main" class="container">
+
+  </main><!-- /.container -->
+
 </body>
 
 </html>
